@@ -1,47 +1,197 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+:root {
+    --primary-color: #005a87;
+    --header-highlight-color: #00415d; /* Darker shade for the header */
+    --secondary-color: #007cba;
+    --accent-color: #cceeff;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --font-family: 'Roboto', sans-serif; /* Modern, readable font */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 40px 0;
+    line-height: 1.6; /* Improved readability */
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding */
+    background: var(--header-highlight-color);
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+    margin-right: 30px;
+    font-weight: 700;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.main-navigation ul li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.main-navigation ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smoother transition */
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li a:focus {
+    color: var(--accent-color);
+    background-color: rgba(255,255,255,0.1); /* Soft background on hover/focus */
+    padding: 5px 10px; /* Padding adjustment */
+    border-radius: 3px; /* Rounded edges */
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--secondary-color);
+    color: #ffffff;
+    padding: 80px 0;
     text-align: center;
-    padding: 1em 0;
 }
 
-nav ul {
-    list-style-type: none;
+.hero-section h2 {
+    font-size: 2.5rem;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
-section {
-    margin: 20px 0;
+/* Features and Other Sections */
+.features-section, .pricing-section, .download-section, .login-section {
+    padding: 80px 0;
 }
 
+.features-section h2, .pricing-section h2, .download-section h2, .login-section h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* Features List */
+.features-list li {
+    margin-bottom: 0px;
+}
+
+/* Pricing Table */
 .pricing-table {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .pricing-option {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-}
-
-.download-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #dddddd;
     border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Enhanced interaction */
 }
 
-footer {
+.pricing-option:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Deeper shadow */
+}
+
+/* Center the Download Button */
+.download-section {
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    flex-direction: column; /* Stack children vertically */
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 80px 0; /* Adjusted padding */
+}
+
+.download-section a.btn-primary {
+    background: #f4f4f4;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.download-section a.btn-primary:hover {
+    background: #e4e4e4;
+}
+/* Login Form */
+.login-section {
+    padding: 80px 0;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.login-form button {
+    background: var(--secondary-color); /* Using CSS variable */
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: var(--primary-color); /* Using CSS variable for hover state */
+}
+
+/* Footer */
+.site-footer {
+    background: #333333;
+    color: #ffffff;
     text-align: center;
-    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.site-footer p {
+    margin: 0;
 }
