@@ -8,6 +8,6 @@ To Do extension
 To Do website
 - change the name to 'DataGuard Innovators'
 - add the logo to the website
-- add more text and accurate information
+- add more text and accurate information (add information about the red-flag system)
 - add some images? Or icons 
 - make it look more polished
