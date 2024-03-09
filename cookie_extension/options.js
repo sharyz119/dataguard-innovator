@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const pref = cookiePrefSelect.value;
         chrome.storage.sync.set({ cookiePref: pref }, () => {
             console.log('Preferences saved:', pref);
+            alert('Preferences saved successfully!')
         });
     });
 });

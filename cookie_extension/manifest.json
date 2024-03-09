@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Web Assistant",
+  "name": "DataGuard",
   "version": "1.0",
-  "permissions": ["storage", "scripting", "webNavigation"],
+  "permissions": ["storage", "scripting", "webNavigation", "webRequest"], // Add webRequest permission
   "background": {
     "service_worker": "background.js"
   },
@@ -14,5 +14,8 @@
   ],
   "action": {
     "default_popup": "options.html"
+  },
+  "icons": {
+    "128": "128.png"
   }
 }

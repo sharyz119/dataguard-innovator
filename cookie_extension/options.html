@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Cookie Preferences</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Cookie Preferences</h1>
-    <select id="cookiePref">
-        <option value="none">None</option>
-        <option value="accept">Accept All</option>
+    <label for="cookiePref">Select your cookie preferences:</label>
+    <select id="cookiePref" aria-label="Cookie preferences">
+        <option value="decline_all">Decline all</option>
+        <option value="decline_tracking">Decline tracking cookies</option>
+        <option value="decline_analytical">Decline analytical cookies</option>
+        <option value="accept_all">Accept all</option>
     </select>
     <button id="save">Save Preferences</button>
     <script src="options.js"></script>
