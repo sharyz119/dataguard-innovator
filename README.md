@@ -10,3 +10,4 @@ To Do website
 - add the logo to the website
 - add more accurate information
 - add some images/icons
+- would be nice if the download button actually downloads the plugin (for the costumer testing)
