@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DataGuard",
+  "name": "CookieGuard",
   "version": "1.0",
   "permissions": ["storage", "scripting", "webNavigation", "webRequest"], // Add webRequest permission
   "background": {
@@ -16,6 +16,6 @@
     "default_popup": "options.html"
   },
   "icons": {
-    "128": "128.png"
+    "128": "icon128.png"
   }
 }
