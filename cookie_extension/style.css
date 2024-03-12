@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 250px;
-    height: 200px;
+    height: 300px;
     background-color: #fafafa;
 }
 
@@ -17,29 +18,44 @@ h1 {
 }
 
 select, button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ddd;
     border-radius: 25px;
-    box-sizing: border-box;
+    border: 1px solid #ddd; 
+    padding: 10px;
     font-size: 1em;
+    cursor: pointer;
+}
+
+select{
+    width: 100%;  
+    box-sizing: border-box;
+    margin-top: 10px;    
+}
+
+#upgrade {
+    background-color: #2223B2;
+    width: 100%;
+    color: white;
 }
 
 #save {
     background-color: #2223B2;
     width: auto;
-    color: white;
-    cursor: pointer;
-    font-weight: 100;
+    color: white;  
+    margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    float: right;
 }
 
-#save:hover {
+#save:hover, #upgrade:hover {
     background-color: #1b1b86;
 }
 
+hr {
+    border: 0.5px solid #2223B2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 /* Bottom banner*/
 .bottom_banner {
