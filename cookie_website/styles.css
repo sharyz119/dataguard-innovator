@@ -195,3 +195,7 @@ body {
 .site-footer p {
     margin: 0;
 }
+
+h6.text-primary {
+    font-size: 50px; /* Adjust the size as needed */
+}
