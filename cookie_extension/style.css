@@ -13,7 +13,7 @@ p {
 
 h1 {
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 1.5em;
 }
 
@@ -54,7 +54,22 @@ select{
 hr {
     border: 0.5px solid #2223B2;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+/* Top banner*/
+.top_banner {   
+    display: flex;
+    flex-flow: row nowrap; /* Align items in a row */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 10px;
+}
+
+.setting {
+    cursor: pointer;
+    height: auto;
+    width: 15px;
 }
 
 /* Bottom banner*/
